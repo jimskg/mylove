@@ -2,15 +2,15 @@
   $(function () {
 
     const events = [
-      { name: 'Bucharest', date: "June", photo: "images/Romania.jpg", text: "Lorem ipsum dolor sit amet" },
-      { name: 'Corfu', date: "August", photo: "images/Corfu.jpg", text: "Lorem ipsum dolor sit amet" },
-      { name: 'Crete', date: "August", photo: "images/Crete.jpg", text: "Lorem ipsum dolor sit amet" },
-      { name: 'Patras', date: "October", photo: "images/Patra.jpg", text: "Lorem ipsum dolor sit amet" },
-      { name: 'Bratislava', date: "October", photo: "images/Slovakia.jpg", text: "Lorem ipsum dolor sit amet" },
-      { name: 'Paris', date: "December", photo: "", text: "Loading..." },
-      { name: 'Strasbourg', date: "February", photo: "", text: "Loading..." },
-      { name: 'Budapest', date: "March", photo: "", text: "Loading..." },
-      { name: 'Barcelona / Sevilla', date: "May", photo: "", text: "Loading..." },
+      { name: 'Bucharest', title:"Bucharest", date: "June", photo: "images/Romania.jpg", text: "Here, I get to know you 😊" },
+      { name: 'Corfu', title:"Corfu", date: "August", photo: "images/Corfu.jpg", text: "And here, I understood you 😇" },
+      { name: 'Crete', title:"Crete", date: "August", photo: "images/Crete.jpg", text: "Well here, I enjoyed every moment with you 😁" },
+      { name: 'Patras', title:"Patras", date: "October", photo: "images/Patra.jpg", text: "Let\'s not talk about this one 😅" },
+      { name: 'Bratislava', title:"Bratislava", date: "October", photo: "images/Slovakia.jpg", text: "Here, I loved you ❤️" },
+      { name: 'Paris', title:"Paris", date: "December", photo: "", text: "Loading..." },
+      { name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "", text: "Loading..." },
+      { name: 'Budapest', title:"Budapest", date: "March", photo: "", text: "Loading..." },
+      { name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "", text: "Loading..." },
       
       // Add more skills as needed
     ];
@@ -80,7 +80,7 @@
 
         var cardTitle = document.createElement('div');
         cardTitle.className = 'ag-timeline-card_title';
-        cardTitle.textContent = "sdsdd";
+        cardTitle.textContent = event.title;
 
         var cardDesc = document.createElement('div');
         cardDesc.className = 'ag-timeline-card_desc';
