@@ -232,7 +232,7 @@
       var distance = endDate - now;
       let cleanedEnteredPassword = enteredPassword.replaceAll(' ','');
 
-      if (distance < 0 && cleanedEnteredPassword.toLowerCase() == 'loveyou3000'){
+      if (distance < 0 && (cleanedEnteredPassword.toLowerCase() == 'loveyou3000' || cleanedEnteredPassword.toLowerCase() == 'iloveyou3000')){
         navigateTo('map-id', 'back-id-li'); 
         passwordInput.value = '';
       } else {
