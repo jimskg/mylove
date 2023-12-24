@@ -2,7 +2,7 @@
   $(function () {
 
     const events = [
-      { name: 'Bucharest', title:"Bucharest", date: "June", photo: "images/Romania.jpg", text: "Here, I get to know you 😊" },
+      { name: 'Bucharest', title:"Bucharest", date: "June", photo: "images/Romania.jpg", text: "Here, I got to know you 😊" },
       { name: 'Corfu', title:"Corfu", date: "August", photo: "images/Corfu.jpg", text: "And here, I understood you 😇" },
       { name: 'Crete', title:"Crete", date: "August", photo: "images/Crete.jpg", text: "Well here, I enjoyed every moment with you 😁" },
       { name: 'Patras', title:"Patras", date: "October", photo: "images/Patra.jpg", text: "Let\'s not talk about this one 😅" },
