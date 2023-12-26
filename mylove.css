@@ -87,6 +87,11 @@ img {
 
   position: relative;
 }
+.ag-timeline_item-year {
+  margin: 0 0 50px;
+
+  position: relative;
+}
 .ag-timeline_item:nth-child(2n) {
   text-align: right;
 }
@@ -126,12 +131,18 @@ img {
 .ag-timeline-card_box {
   padding: 0 0 20px 50%;
 }
+.ag-timeline-card_box-year {
+  padding: 0 0 20px 50%;
+}
 .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
   padding: 0 50% 20px 0;
 }
 .ag-timeline-card_point-box {
   display: inline-block;
   margin: 0 14px 0 -28px;
+}
+.ag-timeline-card_point-box-year {
+  margin: 3rem 14px 3rem -28px;
 }
 .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
   margin: 0 -28px 0 14px;
@@ -292,7 +303,7 @@ img {
   .ag-timeline-card_meta-box {
     display: none;
   }
-  .ag-timeline-card_point-box,
+  .ag-timeline-card_point-box, .ag-timeline-card_point-box-year,
   .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
     margin: 0 0 0 8px;
   }

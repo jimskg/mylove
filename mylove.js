@@ -3,15 +3,19 @@
 
     var slidePosition = 1;
     const events = [
+      { id:"event--1", name: '', title:"", date: "", photo: "", text: "" },
+      { id:"event-0", name: '', title:"", date: "2023", photo: "", text: "" },
       { id:"event-1", name: 'Bucharest', title:"Bucharest", date: "June", photo: "images/Bucharest.jpg", text: "Here, I got to know you 😊" },
       { id:"event-2", name: 'Corfu', title:"Corfu", date: "August", photo: "images/Corfu.jpg", text: "And here, I understood you 😇" },
       { id:"event-3", name: 'Crete', title:"Crete", date: "August", photo: "images/Crete.jpg", text: "Well here, I enjoyed every moment with you 😁" },
       { id:"event-4", name: 'Patras', title:"Patras", date: "October", photo: "images/Patra.jpg", text: "Let\'s not talk about this one 😅" },
       { id:"event-5", name: 'Bratislava', title:"Bratislava", date: "October", photo: "images/Bratislava.jpg", text: "Here, I loved you ❤️" },
       { id:"event-6", name: 'Paris', title:"Paris", date: "December", photo: "", text: "Loading..." },
-      { id:"event-7", name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "", text: "Loading..." },
-      { id:"event-8", name: 'Budapest', title:"Budapest", date: "March", photo: "", text: "Loading..." },
-      { id:"event-9", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "", text: "Loading..." },
+      { id:"event-7", name: '', title:"", date: "", photo: "", text: "" },
+      { id:"event-8", name: '', title:"", date: "2024", photo: "", text: "" },
+      { id:"event-9", name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "", text: "Loading..." },
+      { id:"event-10", name: 'Budapest', title:"Budapest", date: "March", photo: "", text: "Loading..." },
+      { id:"event-11", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "", text: "Loading..." },
       
       // Add more skills as needed
     ];
@@ -72,18 +76,27 @@
       let timeline = document.getElementById('content-events-id');
       let counter = 1;
       events.forEach(event => {
+        let yearFlag = (event.date ==  "2023" || event.date == "2024") ? true : false;
+        let skipFlag = (event.date == "") ? true : false;
         var timelineItem = document.createElement('div');
-        timelineItem.className = 'js-timeline_item ag-timeline_item';
+        timelineItem.className = yearFlag ? 'js-timeline_item ag-timeline_item-year' : 'js-timeline_item ag-timeline_item';
+        if (skipFlag) timelineItem.className = "";
 
         var cardBox = document.createElement('div');
-        cardBox.className = 'ag-timeline-card_box';
-
+        cardBox.className = yearFlag ? 'ag-timeline-card_box-year' : 'ag-timeline-card_box';
+        if (skipFlag) {
+          cardBox.style.opacity = "0";
+          cardBox.className = "";
+        }
+        
         var pointBox = document.createElement('div');
-        pointBox.className = 'js-timeline-card_point-box ag-timeline-card_point-box';
+        pointBox.className = yearFlag ? 'js-timeline-card_point-box ag-timeline-card_point-box-year' : 'js-timeline-card_point-box ag-timeline-card_point-box';
+        if (skipFlag) pointBox.className = "";
 
         var point = document.createElement('div');
         point.className = 'ag-timeline-card_point';
         point.textContent = event.date;
+        if (skipFlag) point.className = "";
 
         var metaBox = document.createElement('div');
         metaBox.className = 'ag-timeline-card_meta-box';
@@ -132,6 +145,7 @@
         arrow.className = 'ag-timeline-card_arrow';
 
         // Append elements to the DOM
+
         pointBox.appendChild(point);
         metaBox.appendChild(meta);
         if (counter%2==1){
@@ -155,11 +169,14 @@
 
         cardItem.appendChild(cardInner);
         cardItem.appendChild(arrow);
-
+        
         timelineItem.appendChild(cardBox);
-        timelineItem.appendChild(cardItem);
+
+        if (!yearFlag && !skipFlag){
+          timelineItem.appendChild(cardItem);
+        }
         timeline.appendChild(timelineItem);
-        counter++;
+        if (!yearFlag && !skipFlag) counter++;
       });
     }
 
