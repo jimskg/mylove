@@ -1,19 +1,55 @@
 (function ($) {
   $(function () {
 
+    var slidePosition = 1;
     const events = [
-      { name: 'Bucharest', title:"Bucharest", date: "June", photo: "images/Romania.jpg", text: "Here, I got to know you 😊" },
-      { name: 'Corfu', title:"Corfu", date: "August", photo: "images/Corfu.jpg", text: "And here, I understood you 😇" },
-      { name: 'Crete', title:"Crete", date: "August", photo: "images/Crete.jpg", text: "Well here, I enjoyed every moment with you 😁" },
-      { name: 'Patras', title:"Patras", date: "October", photo: "images/Patra.jpg", text: "Let\'s not talk about this one 😅" },
-      { name: 'Bratislava', title:"Bratislava", date: "October", photo: "images/Slovakia.jpg", text: "Here, I loved you ❤️" },
-      { name: 'Paris', title:"Paris", date: "December", photo: "", text: "Loading..." },
-      { name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "", text: "Loading..." },
-      { name: 'Budapest', title:"Budapest", date: "March", photo: "", text: "Loading..." },
-      { name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "", text: "Loading..." },
+      { id:"event-1", name: 'Bucharest', title:"Bucharest", date: "June", photo: "images/Bucharest.jpg", text: "Here, I got to know you 😊" },
+      { id:"event-2", name: 'Corfu', title:"Corfu", date: "August", photo: "images/Corfu.jpg", text: "And here, I understood you 😇" },
+      { id:"event-3", name: 'Crete', title:"Crete", date: "August", photo: "images/Crete.jpg", text: "Well here, I enjoyed every moment with you 😁" },
+      { id:"event-4", name: 'Patras', title:"Patras", date: "October", photo: "images/Patra.jpg", text: "Let\'s not talk about this one 😅" },
+      { id:"event-5", name: 'Bratislava', title:"Bratislava", date: "October", photo: "images/Bratislava.jpg", text: "Here, I loved you ❤️" },
+      { id:"event-6", name: 'Paris', title:"Paris", date: "December", photo: "", text: "Loading..." },
+      { id:"event-7", name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "", text: "Loading..." },
+      { id:"event-8", name: 'Budapest', title:"Budapest", date: "March", photo: "", text: "Loading..." },
+      { id:"event-9", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "", text: "Loading..." },
       
       // Add more skills as needed
     ];
+
+    const slidesCarousel = new Map([
+      ["event-1", [{title: "", imageSrc: "images/Bucharest1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bucharest2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bucharest3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bucharest4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bucharest5.jpg", caption: ""}]],
+      ["event-2", [{title: "", imageSrc: "images/Corfu1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Corfu2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Corfu3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Corfu4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Corfu5.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Corfu6.jpg", caption: ""}]],
+      ["event-3", [{title: "", imageSrc: "images/Crete1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Crete2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Crete3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Crete4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Crete5.jpg", caption: ""}]],
+      ["event-4", [{title: "", imageSrc: "images/Patra1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Patra2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Patra3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Patra4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Patra5.jpg", caption: ""}]],
+      ["event-5", [{title: "", imageSrc: "images/Bratislava1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava5.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava6.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava7.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava8.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava9.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Bratislava10.jpg", caption: ""}]],
+    ]);
+
     createEvents();
     createDots();
 
@@ -64,6 +100,12 @@
 
         var imgBox = document.createElement('div');
         imgBox.className = 'ag-timeline-card_img-box';
+        imgBox.id = event.id;
+        imgBox.onclick = function() { 
+          parentPhotoElement = document.getElementById(event.id);
+          createCarousel(parentPhotoElement.id);
+          SlideShow(slidePosition);
+        };
 
         var img = document.createElement('img');
         img.src = event.photo;
@@ -249,7 +291,130 @@
       togglePasswordVisibility();
     });
 
+    function SlideShow(n) {
+      var i;
+      var slides = document.getElementsByClassName("Containers");
+      var circles = document.getElementsByClassName("dots");
+      if (n > slides.length) {slidePosition = 1}
+      if (n < 1) {slidePosition = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < circles.length; i++) {
+          circles[i].className = circles[i].className.replace(" enable", "");
+      }
+      slides[slidePosition-1].style.display = "block";
+      circles[slidePosition-1].className += " enable";
+    } 
+
+    function createCarousel(parentPhotoId){
+      slidePosition = 1;
+      const modalDiv = document.createElement('div');
+      modalDiv.id = 'carousel-modal-id';
+      modalDiv.classList.add('carousel-modal');
+
+      // Create the modal content div
+      const modalContentDiv = document.createElement('div');
+      modalContentDiv.classList.add('carousel-modal-content');
+
+      var slideshowContainer = document.createElement("div");
+      slideshowContainer.className = "slideshow-container fade";
+
+      var dotsDiv = document.createElement("div");
+      dotsDiv.className = "dots-div";
+
+      // Define slide data
+      let slides = slidesCarousel.get(parentPhotoId);
+
+      // Create slides dynamically
+      slides.forEach(function (slide, index) {
+        var container = document.createElement("div");
+        container.className = "Containers fade";
+
+        var title = document.createElement("div");
+        title.className = "info";
+        title.textContent = slide.title;
+
+        var image = document.createElement("img");
+        image.src = slide.imageSrc;
+        image.style.width = "100%";
+
+        var caption = document.createElement("div");
+        caption.className = "caption-info";
+        caption.textContent = slide.caption;
+
+        container.appendChild(title);
+        container.appendChild(image);
+        container.appendChild(caption);
+
+        slideshowContainer.appendChild(container);
+
+        // Create dot dynamically
+        var dot = document.createElement("span");
+        dot.className = "dots";
+        dot.id = "currentSlide" + (index + 1);
+        dot.onclick = function() { 
+          SlideShow(slidePosition = index + 1);
+        };
+
+        // Append dot to the dots container
+        dotsDiv.appendChild(dot);
+      });
+
+      // Create Prev and Next buttons
+      var backButton = document.createElement("a");
+      backButton.className = "Back";
+      backButton.id = "backSlide";
+      backButton.innerHTML = "&#10094;";
+      backButton.onclick = function() { 
+        SlideShow(slidePosition += -1);
+      };
+
+      var forwardButton = document.createElement("a");
+      forwardButton.className = "forward";
+      forwardButton.id = "frontSlide";
+      forwardButton.innerHTML = "&#10095;";
+      forwardButton.onclick = function() { 
+        SlideShow(slidePosition += 1);
+      };
+
+      slideshowContainer.appendChild(backButton);
+      slideshowContainer.appendChild(forwardButton);
+
+      modalContentDiv.appendChild(slideshowContainer);
+      modalContentDiv.appendChild(dotsDiv);
+      modalDiv.appendChild(modalContentDiv);
+
+      // Append the slideshow container to the body
+      document.body.appendChild(modalDiv);
+    }
+
+    document.addEventListener('keydown', function(event) {
+      let carouselElement = document.getElementById("carousel-modal-id");
+      if (carouselElement){
+        switch (event.keyCode) {
+          case 37:
+              SlideShow(slidePosition += -1);
+              break;
+          case 39:
+              SlideShow(slidePosition += +1);
+              break;
+        }
+      }
+    });
+    
   });
+
+  
+
+  
+  window.onclick = function(event) {
+    var carouselModal = document.getElementById("carousel-modal-id");
+    if (event.target == carouselModal) {
+      carouselModal.remove();
+      //carouselModal.style.display = "none";
+    }
+  } 
   
   function createConfetti(duration) {
     const confettiContainer = document.querySelector('#confetti-container');
@@ -304,6 +469,6 @@
       }
   }, 1000);
 
-  
+
   
 })(jQuery);
