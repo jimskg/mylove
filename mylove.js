@@ -61,7 +61,16 @@
                   {title: "", imageSrc: "images/Paris7.jpg", caption: ""},
                   {title: "", imageSrc: "images/Paris8.jpg", caption: ""},
                   {title: "", imageSrc: "images/Paris9.jpg", caption: ""},
-                  {title: "", imageSrc: "images/Paris10.jpg", caption: ""}]],
+                  {title: "", imageSrc: "images/Paris10.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris11.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris12.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris13.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris14.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris15.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris16.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris17.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris18.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris19.jpg", caption: ""}]],
     ]);
 
     createEvents();
