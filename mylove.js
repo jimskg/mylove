@@ -10,7 +10,7 @@
       { id:"event-3", name: 'Crete', title:"Crete", date: "August", photo: "images/Crete.jpg", text: "Well here, I enjoyed every moment with you 😁" },
       { id:"event-4", name: 'Patras', title:"Patras", date: "October", photo: "images/Patra.jpg", text: "Let\'s not talk about this one 😅" },
       { id:"event-5", name: 'Bratislava', title:"Bratislava", date: "October", photo: "images/Bratislava.jpg", text: "Here, I loved you ❤️" },
-      { id:"event-6", name: 'Paris', title:"Paris", date: "December", photo: "", text: "Loading..." },
+      { id:"event-6", name: 'Paris', title:"Paris", date: "December", photo: "images/Paris.jpg", text: "Here, I fell in love with you 😍" },
       { id:"event-7", name: '', title:"", date: "", photo: "", text: "" },
       { id:"event-8", name: '', title:"", date: "2024", photo: "", text: "" },
       { id:"event-9", name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "", text: "Loading..." },
@@ -52,6 +52,16 @@
                   {title: "", imageSrc: "images/Bratislava8.jpg", caption: ""},
                   {title: "", imageSrc: "images/Bratislava9.jpg", caption: ""},
                   {title: "", imageSrc: "images/Bratislava10.jpg", caption: ""}]],
+      ["event-6", [{title: "", imageSrc: "images/Paris1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris5.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris6.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris7.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris8.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris9.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Paris10.jpg", caption: ""}]],
     ]);
 
     createEvents();
