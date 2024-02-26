@@ -13,11 +13,9 @@
       { id:"event-6", name: 'Paris', title:"Paris", date: "December", photo: "images/Paris.jpg", text: "Here, I fell in love with you 😍" },
       { id:"event-7", name: '', title:"", date: "", photo: "", text: "" },
       { id:"event-8", name: '', title:"", date: "2024", photo: "", text: "" },
-      { id:"event-9", name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "", text: "Loading..." },
+      { id:"event-9", name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "images/Strasbourg.jpg", text: "Heeeere, I felt lucky that I have you 🤞" },
       { id:"event-10", name: 'Budapest', title:"Budapest", date: "March", photo: "", text: "Loading..." },
       { id:"event-11", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "", text: "Loading..." },
-      
-      // Add more skills as needed
     ];
 
     const slidesCarousel = new Map([
@@ -71,6 +69,15 @@
                   {title: "", imageSrc: "images/Paris17.jpg", caption: ""},
                   {title: "", imageSrc: "images/Paris18.jpg", caption: ""},
                   {title: "", imageSrc: "images/Paris19.jpg", caption: ""}]],
+      ["event-9", [{title: "", imageSrc: "images/Strasbourg1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Strasbourg2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Strasbourg3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Strasbourg4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Strasbourg5.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Strasbourg6.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Strasbourg7.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Strasbourg8.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Strasbourg9.jpg", caption: ""}]],
     ]);
 
     createEvents();
@@ -372,6 +379,7 @@
         title.textContent = slide.title;
 
         var image = document.createElement("img");
+
         image.src = slide.imageSrc;
         image.style.width = "100%";
 
