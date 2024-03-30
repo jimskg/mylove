@@ -14,7 +14,7 @@
       { id:"event-7", name: '', title:"", date: "", photo: "", text: "" },
       { id:"event-8", name: '', title:"", date: "2024", photo: "", text: "" },
       { id:"event-9", name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "images/Strasbourg.jpg", text: "Heeeere, I felt lucky that I have you 🤞" },
-      { id:"event-10", name: 'Budapest', title:"Budapest", date: "March", photo: "", text: "Loading..." },
+      { id:"event-10", name: 'Budapest', title:"Budapest", date: "March", photo: "images/Budapest.jpg", text: "Here, I appreciated everything that you are doing for me 🤗" },
       { id:"event-11", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "", text: "Loading..." },
     ];
 
@@ -78,6 +78,25 @@
                   {title: "", imageSrc: "images/Strasbourg7.jpg", caption: ""},
                   {title: "", imageSrc: "images/Strasbourg8.jpg", caption: ""},
                   {title: "", imageSrc: "images/Strasbourg9.jpg", caption: ""}]],
+      ["event-10", [{title: "", imageSrc: "images/Budapest1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest5.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest6.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest7.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest8.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest9.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest10.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest11.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest12.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest13.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest14.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest15.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest16.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest17.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest18.jpg", caption: ""},
+                  {title: "", imageSrc: "images/Budapest19.jpg", caption: ""}]],
     ]);
 
     createEvents();
