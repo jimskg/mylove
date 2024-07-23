@@ -16,6 +16,7 @@
       { id:"event-9", name: 'Strasbourg', title:"Strasbourg", date: "February", photo: "images/Strasbourg.jpg", text: "Heeeere, I felt lucky that I have you 🤞" },
       { id:"event-10", name: 'Budapest', title:"Budapest", date: "March", photo: "images/Budapest.jpg", text: "Here, I appreciated everything that you are doing for me 🤗" },
       { id:"event-11", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "images/BarcelonaSevilla.jpg", text: "Here, I felt like we were \"Ohana\" 👩‍❤️‍💋‍👨. Ohana means family and we are doing everything for our family" },
+      { id:"event-12", name: 'Valletta / Mdina', title:"Valletta / Mdina", date: "July", photo: "images/VallettaMdina.jpg", text: "It was just a weekend, but you made it feel like a real vacation 🏝" },
       // { id:"event-12", name: 'Zagreb', title:"Zagreb", date: "June", photo: "", text: "Loading..." },
     ];
 
@@ -135,6 +136,17 @@
                   {title: "", imageSrc: "images/BarcelonaSevilla35.jpg", caption: ""},
                   {title: "", imageSrc: "images/BarcelonaSevilla36.jpg", caption: ""},
                   {title: "", imageSrc: "images/BarcelonaSevilla37.jpg", caption: ""},]],
+      ["event-12", [{title: "", imageSrc: "images/VallettaMdina1.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina2.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina3.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina4.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina5.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina6.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina7.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina8.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina9.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina10.jpg", caption: ""},
+                  {title: "", imageSrc: "images/VallettaMdina11.jpg", caption: ""}]],
     ]);
 
     createEvents();
