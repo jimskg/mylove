@@ -17,6 +17,7 @@
       { id:"event-10", name: 'Budapest', title:"Budapest", date: "March", photo: "images/Budapest.jpg", text: "Here, I appreciated everything that you are doing for me 🤗" },
       { id:"event-11", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "images/BarcelonaSevilla.jpg", text: "Here, I felt like we were \"Ohana\" 👩‍❤️‍💋‍👨. Ohana means family and we are doing everything for our family" },
       { id:"event-12", name: 'Valletta / Mdina', title:"Valletta / Mdina", date: "July", photo: "images/VallettaMdina.jpg", text: "It was just a weekend, but you made it feel like a real vacation 🏝" },
+      { id:"event-13", name: 'Skopelos', title:"Skopelos", date: "August", photo: "images/Skopelos.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
       // { id:"event-12", name: 'Zagreb', title:"Zagreb", date: "June", photo: "", text: "Loading..." },
     ];
 
@@ -147,6 +148,18 @@
                   {title: "", imageSrc: "images/VallettaMdina9.jpg", caption: ""},
                   {title: "", imageSrc: "images/VallettaMdina10.jpg", caption: ""},
                   {title: "", imageSrc: "images/VallettaMdina11.jpg", caption: ""}]],
+      ["event-13", [{title: "", imageSrc: "images/Skopelos1.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos2.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos3.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos4.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos5.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos6.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos7.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos8.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos9.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos10.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos11.jpg", caption: ""},
+                    {title: "", imageSrc: "images/Skopelos12.jpg", caption: ""}]],
     ]);
 
     createEvents();
