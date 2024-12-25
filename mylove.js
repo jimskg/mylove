@@ -357,6 +357,9 @@
       const buttons = document.getElementsByClassName('nav-item');
       for (currentButtons of buttons) {
         currentButtons.style.display = 'none';
+        if (buttonId == 'birthday-id-li' && currentButtons.id == 'site-id-li'){
+          currentButtons.style.display = 'block';
+        }
         if (currentButtons.id == buttonId){
           currentButtons.style.display = 'block';
         }
