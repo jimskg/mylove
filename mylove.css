@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+.custom-body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 @font-face {
   font-family: 'ESL Legend';
   src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
@@ -292,11 +297,11 @@ img {
     left: 30px;
   }
 
-  .ag-timeline_item:nth-child(2n) {
+  .ag-timeline_item:nth-child(2n), .ag-timeline_item-year {
     text-align: left;
   }
 
-  .ag-timeline-card_box,
+  .ag-timeline-card_box, .ag-timeline-card_box-year,
   .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
     padding: 0 0 20px;
   }
@@ -382,6 +387,12 @@ img {
 @media not all and (min-width: 640px) {
   .ag-contact-card-column-margin {
     margin-bottom: 1rem;
+  }
+}
+
+@media not all and (min-width: 640px) {
+  .ag-timeline-block-padding {
+    padding-top: 1rem;
   }
 }
 
@@ -924,8 +935,7 @@ li.nav-item a:hover:not(.active) {
 
 @media not all and (min-width: 640px) {
   .ag-carousel-modal-content-left {
-    left: 4rem;
-    margin: 0;
-    top:5%;
+    width: 90%;
+    top:10%;
   }
 }
