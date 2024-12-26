@@ -5,7 +5,8 @@
 
 
 body {
-  background-color:#1d1d1d;
+  background-color:#1d1d1d;   
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -359,10 +360,6 @@ img {
   }
 }
 
-@media only screen and (max-width: 479px) {
-
-}
-
 @media (min-width: 768px) and (max-width: 979px) {
   .ag-format-container {
     width: 750px;
@@ -374,8 +371,18 @@ img {
   .ag-format-container {
     width: 960px;
   }
+}
 
+@media not all and (min-width: 640px) {
+  .ag-contact-card-margin {
+    margin: 2rem;
+  }
+}
 
+@media not all and (min-width: 640px) {
+  .ag-contact-card-column-margin {
+    margin-bottom: 1rem;
+  }
 }
 
 
@@ -533,10 +540,9 @@ li.nav-item a:hover:not(.active) {
 }
 
 #countdown {
-  width: 50%;
   #cdDays, #cdHours, #cdMins, #cdSecs {
     display: inline-block;
-    width: 24%;
+    width: 20%;
     background-color: lighten(darkgray, 10%);
     font-family: 'Graduate', cursive;
   }
@@ -745,7 +751,7 @@ li.nav-item a:hover:not(.active) {
   right: 0;
   bottom: 0; 
   margin-left: 11%;
-  height: 24rem;
+  height: 20rem;
   width: 30%;
   margin-top: -15rem;
 }
@@ -758,7 +764,7 @@ li.nav-item a:hover:not(.active) {
 }
 
 .contact-card-column {
-  padding:50px;
+  padding:2rem;
   flex: 50%;
   color:rgb(84, 89, 95);;
 }
@@ -777,7 +783,7 @@ li.nav-item a:hover:not(.active) {
 
 .contact-card-column p {
   color:var(--main-theme-color);
-  margin-bottom:3rem;
+  margin-bottom:1rem;
 }
 
 .contact-card {
@@ -908,12 +914,18 @@ li.nav-item a:hover:not(.active) {
 .carousel-modal-content {
   background-color: #1d1d1d;
   /*margin: 15% auto;*/ /* 15% from the top and centered */
-  /* padding: 20px;
-  border: 1px solid #888; */
+  /* 
   /* width: 50%; */
   margin:auto;
-  left: 35%;
-  top: 10%;
   width: 30%;
-  margin-top: 5%;
+  top: 20%;
+  position: relative;
+}
+
+@media not all and (min-width: 640px) {
+  .ag-carousel-modal-content-left {
+    left: 4rem;
+    margin: 0;
+    top:5%;
+  }
 }
