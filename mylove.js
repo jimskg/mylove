@@ -289,8 +289,21 @@
     }
 
     $(window).on('scroll', function () {
-      fnOnScroll();
+      if (!isMobile()){
+        fnOnScroll();
+      }
     });
+
+    $(document.body).on('touchmove', function () {
+      if (isMobile()){
+        fnOnScroll();
+      }
+    });
+
+    function isMobile() {
+      return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+    }
+
 
     $(window).on('resize', function () {
       fnOnResize();
@@ -443,7 +456,7 @@
 
       // Create the modal content div
       const modalContentDiv = document.createElement('div');
-      modalContentDiv.classList.add('carousel-modal-content');
+      modalContentDiv.className = 'carousel-modal-content ag-carousel-modal-content-left';
 
       var slideshowContainer = document.createElement("div");
       slideshowContainer.className = "slideshow-container fade";
