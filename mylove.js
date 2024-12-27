@@ -18,6 +18,7 @@
       { id:"event-11", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "images/BarcelonaSevilla.jpg", text: "Here, I felt like we were \"Ohana\" 👩‍❤️‍💋‍👨. Ohana means family and we are doing everything for our family" },
       { id:"event-12", name: 'Valletta / Mdina', title:"Valletta / Mdina", date: "July", photo: "images/VallettaMdina.jpg", text: "It was just a weekend, but you made it feel like a real vacation 🏝" },
       { id:"event-13", name: 'Skopelos', title:"Skopelos", date: "August", photo: "images/Skopelos.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
+      { id:"event-14", name: 'THE END?', title:"THE END", date: "December", photo: "images/theend.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
       // { id:"event-12", name: 'Zagreb', title:"Zagreb", date: "June", photo: "", text: "Loading..." },
     ];
 
@@ -160,10 +161,52 @@
                     {title: "", imageSrc: "images/Skopelos10.jpg", caption: ""},
                     {title: "", imageSrc: "images/Skopelos11.jpg", caption: ""},
                     {title: "", imageSrc: "images/Skopelos12.jpg", caption: ""}]],
+      ["event-14", [{title: "", imageSrc: "videos/theendvideo.mp4", caption: ""},
+                      {title: "", imageSrc: "images/theend1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend3.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend4.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend5.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend6.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend7.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend8.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend9.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend10.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend11.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend12.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend13.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend14.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend15.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend16.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend17.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend18.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend19.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend20.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend21.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend22.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend23.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend24.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend25.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend26.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend27.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend28.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend29.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend30.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend31.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend32.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend33.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend34.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend35.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend36.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend37.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend38.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend39.jpg", caption: ""},
+                      {title: "", imageSrc: "images/theend40.jpg", caption: ""}]],
     ]);
 
     createEvents();
     createDots();
+    fadeAway();
 
     function createDots(){
       const dotSpinners = document.getElementsByClassName('dot-spinner');
@@ -416,7 +459,8 @@
       let cleanedEnteredPassword = enteredPassword.replaceAll(' ','');
 
       if (distance < 0 && (cleanedEnteredPassword.toLowerCase() == 'loveyou3000' || cleanedEnteredPassword.toLowerCase() == 'iloveyou3000')){
-        navigateTo('map-id', 'back-id-li'); 
+        //navigateTo('map-id', 'back-id-li'); 
+        window.open('https://jimskg.github.io/menu/', '_blank')
         passwordInput.value = '';
       } else {
         passwordInput.classList.add('shake');
@@ -440,6 +484,14 @@
       if (n < 1) {slidePosition = slides.length}
       for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
+          if (slides[i].innerHTML.includes('.mp4')){
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(slides[i].innerHTML, 'text/html');
+            const videoElement = doc.querySelector('video');
+            const videoId = videoElement.id;
+            var video = document.getElementById(videoId); 
+            video.pause();
+          }
       }
       for (i = 0; i < circles.length; i++) {
           circles[i].className = circles[i].className.replace(" enable", "");
@@ -476,10 +528,19 @@
         title.className = "info";
         title.textContent = slide.title;
 
-        var image = document.createElement("img");
-
-        image.src = slide.imageSrc;
-        image.style.width = "100%";
+        var image;
+        if (slide.imageSrc.includes('mp4')){
+          image = document.createElement("div");
+          image.className = 'img-carousel-video-box';
+          image.innerHTML =  `
+              <video id="${slide.imageSrc}" controls autoplay style="width:100%; height:100%; object-fit:cover;" >
+                <source src="${slide.imageSrc}" type="video/mp4">
+              </video> `;
+        } else {
+          image = document.createElement("img");
+          image.src = slide.imageSrc;
+          image.className = 'img-carousel-box';
+        }
 
         var caption = document.createElement("div");
         caption.className = "caption-info";
@@ -548,8 +609,6 @@
   });
 
   
-
-  
   window.onclick = function(event) {
     var carouselModal = document.getElementById("carousel-modal-id");
     if (event.target == carouselModal) {
@@ -586,7 +645,7 @@
   }
 
   // Set the date we're counting down to
-  var endDate = new Date("Feb 6, 2024 00:00:00").getTime();
+  var endDate = new Date("Jan 1, 2025 00:00:00").getTime();
   // var endDate = new Date("Feb 6, 2023 00:00:00").getTime();
   
   var x = setInterval(function() {
@@ -611,6 +670,24 @@
       }
   }, 1000);
 
+  function fadeAway() {
+    const startDate = new Date('2024-12-19');
+    const endDate = new Date('2025-02-19');
+    const today = new Date();
 
+    // Calculate progress
+    const totalDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
+    const elapsedDays = (today - startDate) / (1000 * 60 * 60 * 24);
+    const progress = Math.min(1, elapsedDays / totalDays); // Clamp between 0 and 1
+
+    const body = document.body;
+    const loadingBar = document.getElementById('loading-bar');
+
+    // Update loading bar width
+    loadingBar.style.width = `${progress * 100}%`;
+
+    // Update opacity
+    body.style.opacity = 1 - progress;
+  }
   
 })(jQuery);

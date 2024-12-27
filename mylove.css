@@ -8,6 +8,9 @@ body {
   background-color:#1d1d1d;   
   max-width: 100%;
   overflow-x: hidden;
+
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
 
 .custom-body {
@@ -69,10 +72,31 @@ img {
 
   text-align: center;
 }
+
 .ag-timeline_tagline {
   font-size: 40px;
   color: rgb(84, 89, 95);
 }
+
+.ag-timeline_tagline_disclaimer {
+  margin-top:1rem;
+  margin-bottom:1rem;
+  font-size: 30px;
+  color: rgb(84, 89, 95);
+}
+
+@media not all and (min-width: 640px) {
+  .ag-timeline_tagline {
+    font-size: 20px;
+  }
+}
+
+@media not all and (min-width: 640px) {
+  .ag-timeline_tagline_disclaimer {
+    font-size: 15px;
+  }
+}
+
 .ag-timeline_title {
   background-image: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/bg.jpg);
   background-repeat: no-repeat;
@@ -938,4 +962,30 @@ li.nav-item a:hover:not(.active) {
     width: 90%;
     top:10%;
   }
+}
+
+.img-carousel-video-box {
+  aspect-ratio: 12 / 16 auto;
+}
+
+.img-carousel-box {
+  object-fit: cover;
+  width:100%;
+}
+
+#loading-bar-container {
+  /* position: absolute;
+  left: 25%; */
+  width: 50%;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+
+#loading-bar {
+  height: 10px;
+  width: 0%;
+  background: #4caf50;
+  transition: width 0.1s ease-in-out;
 }
