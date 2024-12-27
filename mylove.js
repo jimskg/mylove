@@ -18,7 +18,7 @@
       { id:"event-11", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "images/BarcelonaSevilla.jpg", text: "Here, I felt like we were \"Ohana\" 👩‍❤️‍💋‍👨. Ohana means family and we are doing everything for our family" },
       { id:"event-12", name: 'Valletta / Mdina', title:"Valletta / Mdina", date: "July", photo: "images/VallettaMdina.jpg", text: "It was just a weekend, but you made it feel like a real vacation 🏝" },
       { id:"event-13", name: 'Skopelos', title:"Skopelos", date: "August", photo: "images/Skopelos.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
-      { id:"event-14", name: 'THE END?', title:"THE END", date: "December", photo: "images/theend.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
+      { id:"event-14", name: 'THE END?', title:"THE END?", date: "December", photo: "images/theend.jpg", text: "We all make mistakes and take some things for granted, but there are some people who are worth fighting for 💪" },
       // { id:"event-12", name: 'Zagreb', title:"Zagreb", date: "June", photo: "", text: "Loading..." },
     ];
 
@@ -411,15 +411,25 @@
     function navigateTo(tabId, buttonId) {
       const tabs = document.getElementsByClassName('tab');
       const buttons = document.getElementsByClassName('nav-item');
+      // for (currentButtons of buttons) {
+      //   currentButtons.style.display = 'none';
+      //   // if (buttonId == 'birthday-id-li' && currentButtons.id == 'site-id-li'){
+      //   //   currentButtons.style.display = 'block';
+      //   // }
+      //   if (currentButtons.id == buttonId){
+      //     currentButtons.style.display = 'block';
+      //   }
+      // }
       for (currentButtons of buttons) {
-        currentButtons.style.display = 'none';
-        // if (buttonId == 'birthday-id-li' && currentButtons.id == 'site-id-li'){
-        //   currentButtons.style.display = 'block';
-        // }
-        if (currentButtons.id == buttonId){
-          currentButtons.style.display = 'block';
+        if (buttonId == 'back-id-li'){
+          if (currentButtons.id == 'back-id-li') currentButtons.style.display = 'block';
+          else currentButtons.style.display = 'none';
+        } else {
+          if (currentButtons.id == 'back-id-li') currentButtons.style.display = 'none';
+          else currentButtons.style.display = 'block';
         }
       }
+
       for (currentTab of tabs) {
         currentTab.style.display = 'none';
         if (currentTab.id == tabId){
@@ -435,6 +445,10 @@
 
     $('#birthday-id-button').on('click', function () {
       navigateTo('birthday-id', 'back-id-li'); 
+    });
+
+    $('#chat-id-button').on('click', function () {
+      navigateTo('chat-id', 'back-id-li'); 
     });
     
     function togglePasswordVisibility() {
@@ -470,6 +484,10 @@
           showPasswordBtn.classList.remove('shake');
         }, 500);
       }
+    });
+
+    $('#excited-button-id').on('click', function(){
+      window.open('https://jimskg.github.io/menu/', '_blank')
     });
 
     $('#show-password-button-id').on('click', function () {

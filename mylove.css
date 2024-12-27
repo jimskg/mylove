@@ -703,7 +703,7 @@ li.nav-item a:hover:not(.active) {
   margin: 2rem;
 }
 
-#password, #check-password-button-id {
+#password, .check-button-id {
   width: 350px;
   padding: 10px;
   font-size: 16px;
@@ -718,11 +718,11 @@ li.nav-item a:hover:not(.active) {
   box-shadow: 4px 2px 2px black;
 }
 
-#check-password-button-id {
+.check-button-id {
   cursor: pointer;
 }
 
-#check-password-button-id:active { 
+.check-button-id:active { 
   transform: scale(0.98); 
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
 } 
@@ -989,3 +989,104 @@ li.nav-item a:hover:not(.active) {
   background: #4caf50;
   transition: width 0.1s ease-in-out;
 }
+
+
+/* CHAT START */
+
+.chat-container {
+  width: 300px;
+  height: 600px;
+  overflow-y: auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top:2rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 75%;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.left {
+  align-self: flex-start;
+  background-color: #e1e1e1;
+  color: #333;
+  animation-delay: 0s; /* First message appears immediately */
+  text-align: left;
+}
+
+.right {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #fff;
+  text-align: right;
+  animation-delay: 1.5s; /* Second message after 1.5 seconds */
+}
+
+
+.message:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.message:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+.message:nth-child(5) {
+  animation-delay: 6s;
+}
+
+.message:nth-child(6) {
+  animation-delay: 7.5s;
+}
+
+.message:nth-child(7) {
+  animation-delay: 9s;
+}
+
+.message:nth-child(8) {
+  animation-delay: 10.5s;
+}
+
+.message:nth-child(9) {
+  animation-delay: 12s;
+}
+
+.message:nth-child(10) {
+  animation-delay: 13.5s;
+}
+
+.message:nth-child(11) {
+  animation-delay: 15s;
+}
+
+.message:nth-child(12) {
+  animation-delay: 16.5s;
+}
+
+.message:nth-child(13) {
+  animation-delay: 18s;
+}
+
+.message:nth-child(14) {
+  animation-delay: 19.5s;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+/* CHAT END */
