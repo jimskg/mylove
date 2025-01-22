@@ -18,7 +18,7 @@
       { id:"event-11", name: 'Barcelona / Sevilla', title:"Barcelona / Sevilla", date: "May", photo: "images/BarcelonaSevilla.jpg", text: "Here, I felt like we were \"Ohana\" 👩‍❤️‍💋‍👨. Ohana means family and we are doing everything for our family" },
       { id:"event-12", name: 'Valletta / Mdina', title:"Valletta / Mdina", date: "July", photo: "images/VallettaMdina.jpg", text: "It was just a weekend, but you made it feel like a real vacation 🏝" },
       { id:"event-13", name: 'Skopelos', title:"Skopelos", date: "August", photo: "images/Skopelos.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
-      { id:"event-14", name: 'THE END?', title:"THE END?", date: "December", photo: "images/theend.jpg", text: "We all make mistakes and take some things for granted, but there are some people who are worth fighting for 💪" },
+      { id:"event-14", name: 'NOT THE END 😁', title:"NOT THE END", date: "December", photo: "images/theend.jpg", text: "We all make mistakes and take some things for granted, but there are some people who are worth fighting for 💪" },
       // { id:"event-12", name: 'Zagreb', title:"Zagreb", date: "June", photo: "", text: "Loading..." },
     ];
 
@@ -206,7 +206,7 @@
 
     createEvents();
     createDots();
-    fadeAway();
+    //fadeAway();
 
     function createDots(){
       const dotSpinners = document.getElementsByClassName('dot-spinner');
@@ -486,9 +486,9 @@
       }
     });
 
-    $('#excited-button-id').on('click', function(){
-      window.open('https://jimskg.github.io/menu/', '_blank')
-    });
+    // $('#excited-button-id').on('click', function(){
+    //   window.open('https://jimskg.github.io/menu/', '_blank')
+    // });
 
     $('#show-password-button-id').on('click', function () {
       togglePasswordVisibility();
@@ -688,24 +688,24 @@
       }
   }, 1000);
 
-  function fadeAway() {
-    const startDate = new Date('2024-12-19');
-    const endDate = new Date('2025-02-19');
-    const today = new Date();
+  // function fadeAway() {
+  //   const startDate = new Date('2024-12-19');
+  //   const endDate = new Date('2025-02-19');
+  //   const today = new Date();
 
-    // Calculate progress
-    const totalDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
-    const elapsedDays = (today - startDate) / (1000 * 60 * 60 * 24);
-    const progress = Math.min(1, elapsedDays / totalDays); // Clamp between 0 and 1
+  //   // Calculate progress
+  //   const totalDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
+  //   const elapsedDays = (today - startDate) / (1000 * 60 * 60 * 24);
+  //   const progress = Math.min(1, elapsedDays / totalDays); // Clamp between 0 and 1
 
-    const body = document.body;
-    const loadingBar = document.getElementById('loading-bar');
+  //   const body = document.body;
+  //   const loadingBar = document.getElementById('loading-bar');
 
-    // Update loading bar width
-    loadingBar.style.width = `${progress * 100}%`;
+  //   // Update loading bar width
+  //   loadingBar.style.width = `${progress * 100}%`;
 
-    // Update opacity
-    body.style.opacity = 1 - progress;
-  }
+  //   // Update opacity
+  //   body.style.opacity = 1 - progress;
+  // }
   
 })(jQuery);
