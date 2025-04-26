@@ -19,7 +19,7 @@
       { id:"event-12", name: 'Valletta / Mdina', title:"Valletta / Mdina", date: "July", photo: "images/VallettaMdina.jpg", text: "It was just a weekend, but you made it feel like a real vacation 🏝" },
       { id:"event-13", name: 'Skopelos', title:"Skopelos", date: "August", photo: "images/Skopelos.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
       { id:"event-14", name: 'NOT THE END 😁', title:"NOT THE END", date: "December", photo: "images/theend.jpg", text: "We all make mistakes and take some things for granted, but there are some people who are worth fighting for 💪" },
-      // { id:"event-12", name: 'Zagreb', title:"Zagreb", date: "June", photo: "", text: "Loading..." },
+      { id:"event-15", name: 'Warsaw / Kraków / Gdańsk', title:"Warsaw / Kraków / Gdańsk", date: "April", photo: "images/WarsawKrakowGdansk.jpg", text: "Here, everything felt better, even with both of us a little sick 🤒" },
     ];
 
     const slidesCarousel = new Map([
@@ -202,6 +202,20 @@
                       {title: "", imageSrc: "images/theend38.jpg", caption: ""},
                       {title: "", imageSrc: "images/theend39.jpg", caption: ""},
                       {title: "", imageSrc: "images/theend40.jpg", caption: ""}]],
+      ["event-15", [{title: "", imageSrc: "images/WarsawKrakowGdansk1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk3.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk4.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk5.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk6.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk7.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk8.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk9.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk10.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk11.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk12.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk13.jpg", caption: ""},
+                      {title: "", imageSrc: "images/WarsawKrakowGdansk14.jpg", caption: ""}]],
     ]);
 
     createEvents();
