@@ -20,6 +20,10 @@
       { id:"event-13", name: 'Skopelos', title:"Skopelos", date: "August", photo: "images/Skopelos.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
       { id:"event-14", name: 'NOT THE END 😁', title:"NOT THE END", date: "December", photo: "images/theend.jpg", text: "We all make mistakes and take some things for granted, but there are some people who are worth fighting for 💪" },
       { id:"event-15", name: 'Warsaw / Kraków / Gdańsk', title:"Warsaw / Kraków / Gdańsk", date: "April", photo: "images/WarsawKrakowGdansk.jpg", text: "Here, everything felt better, even with both of us a little sick 🤒" },
+      { id:"event-16", name: 'Nea Moudania', title:"Nea Moudania", date: "August", photo: "images/NeaMoudania.jpg", text: "Here, I just wanted to thank you for always taking care of me 😄" },
+      { id:"event-17", name: 'Paphos', title:"Paphos", date: "September", photo: "", text: "Loading..." },
+      { id:"event-18", name: 'Vienna / Prague', title:"Vienna / Prague", date: "October", photo: "", text: "Loading..." },
+      { id:"event-19", name: 'Zagreb / Ljubljana', title:"Zagreb / Ljubljana", date: "October", photo: "", text: "Loading..." },
     ];
 
     const slidesCarousel = new Map([
@@ -216,6 +220,20 @@
                       {title: "", imageSrc: "images/WarsawKrakowGdansk12.jpg", caption: ""},
                       {title: "", imageSrc: "images/WarsawKrakowGdansk13.jpg", caption: ""},
                       {title: "", imageSrc: "images/WarsawKrakowGdansk14.jpg", caption: ""}]],
+      ["event-16", [{title: "", imageSrc: "images/NeaMoudania1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania3.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania4.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania5.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania6.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania7.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania8.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania9.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania10.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NeaMoudania11.jpg", caption: ""}]],
+      ["event-17", [{title: "", imageSrc: "", caption: ""}]],
+      ["event-18", [{title: "", imageSrc: "", caption: ""}]],
+      ["event-19", [{title: "", imageSrc: "", caption: ""}]],
     ]);
 
     createEvents();
