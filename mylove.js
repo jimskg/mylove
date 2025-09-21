@@ -22,7 +22,7 @@
       { id:"event-15", name: 'Warsaw / Kraków / Gdańsk', title:"Warsaw / Kraków / Gdańsk", date: "April", photo: "images/WarsawKrakowGdansk.jpg", text: "Here, everything felt better, even with both of us a little sick 🤒" },
       { id:"event-16", name: 'Nea Moudania', title:"Nea Moudania", date: "August", photo: "images/NeaMoudania.jpg", text: "Here, I just wanted to thank you for always taking care of me 😄" },
       { id:"event-17", name: 'Kos / Kalimnos', title:"Kos / Kalimnos", date: "August", photo: "images/KosKalimnos.jpg", text: "Here, we became even more familiar 👩‍❤️‍👨" },
-      { id:"event-18", name: 'Paphos', title:"Paphos", date: "September", photo: "", text: "Loading..." },
+      { id:"event-18", name: 'Paphos', title:"Paphos", date: "September", photo: "images/Paphos.jpg", text: "You turned a Saturday into the perfect vacation getaway 🌴" },
       { id:"event-19", name: 'Vienna / Prague', title:"Vienna / Prague", date: "October", photo: "", text: "Loading..." },
       { id:"event-20", name: 'Zagreb / Ljubljana', title:"Zagreb / Ljubljana", date: "October", photo: "", text: "Loading..." },
     ];
@@ -249,7 +249,11 @@
                       {title: "", imageSrc: "images/KosKalimnos15.jpg", caption: ""},
                       {title: "", imageSrc: "images/KosKalimnos16.jpg", caption: ""},
                       {title: "", imageSrc: "images/KosKalimnos17.jpg", caption: ""}]],
-      ["event-18", [{title: "", imageSrc: "", caption: ""}]],
+      ["event-18", [{title: "", imageSrc: "images/Paphos1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/Paphos2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/Paphos3.jpg", caption: ""},
+                      {title: "", imageSrc: "images/Paphos4.jpg", caption: ""},
+                      {title: "", imageSrc: "images/Paphos5.jpg", caption: ""}]],
       ["event-19", [{title: "", imageSrc: "", caption: ""}]],
       ["event-20", [{title: "", imageSrc: "", caption: ""}]],
     ]);
