@@ -23,7 +23,7 @@
       { id:"event-16", name: 'Nea Moudania', title:"Nea Moudania", date: "August", photo: "images/NeaMoudania.jpg", text: "Here, I just wanted to thank you for always taking care of me 😄" },
       { id:"event-17", name: 'Kos / Kalimnos', title:"Kos / Kalimnos", date: "August", photo: "images/KosKalimnos.jpg", text: "Here, we became even more familiar 👩‍❤️‍👨" },
       { id:"event-18", name: 'Paphos', title:"Paphos", date: "September", photo: "images/Paphos.jpg", text: "You turned a Saturday into the perfect vacation getaway 🌴" },
-      { id:"event-19", name: 'Vienna / Prague', title:"Vienna / Prague", date: "October", photo: "", text: "Loading..." },
+      { id:"event-19", name: 'Vienna / Prague', title:"Vienna / Prague", date: "October", photo: "images/ViennaPrague.jpg", text: "Here, I annoyed you a little (😠), but I hope I made up for it 🚶" },
       { id:"event-20", name: 'Zagreb / Ljubljana', title:"Zagreb / Ljubljana", date: "October", photo: "", text: "Loading..." },
     ];
 
@@ -254,7 +254,19 @@
                       {title: "", imageSrc: "images/Paphos3.jpg", caption: ""},
                       {title: "", imageSrc: "images/Paphos4.jpg", caption: ""},
                       {title: "", imageSrc: "images/Paphos5.jpg", caption: ""}]],
-      ["event-19", [{title: "", imageSrc: "", caption: ""}]],
+      ["event-19", [{title: "", imageSrc: "images/ViennaPrague1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague3.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague4.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague5.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague6.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague7.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague8.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague9.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague10.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague11.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague12.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ViennaPrague13.jpg", caption: ""}]],
       ["event-20", [{title: "", imageSrc: "", caption: ""}]],
     ]);
 
