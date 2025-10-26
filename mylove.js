@@ -19,12 +19,17 @@
       { id:"event-12", name: 'Valletta / Mdina', title:"Valletta / Mdina", date: "July", photo: "images/VallettaMdina.jpg", text: "It was just a weekend, but you made it feel like a real vacation 🏝" },
       { id:"event-13", name: 'Skopelos', title:"Skopelos", date: "August", photo: "images/Skopelos.jpg", text: "Sometimes we have our ups and downs, but we will get through everything together 🤜🤛" },
       { id:"event-14", name: 'NOT THE END 😁', title:"NOT THE END", date: "December", photo: "images/theend.jpg", text: "We all make mistakes and take some things for granted, but there are some people who are worth fighting for 💪" },
-      { id:"event-15", name: 'Warsaw / Kraków / Gdańsk', title:"Warsaw / Kraków / Gdańsk", date: "April", photo: "images/WarsawKrakowGdansk.jpg", text: "Here, everything felt better, even with both of us a little sick 🤒" },
-      { id:"event-16", name: 'Nea Moudania', title:"Nea Moudania", date: "August", photo: "images/NeaMoudania.jpg", text: "Here, I just wanted to thank you for always taking care of me 😄" },
-      { id:"event-17", name: 'Kos / Kalimnos', title:"Kos / Kalimnos", date: "August", photo: "images/KosKalimnos.jpg", text: "Here, we became even more familiar 👩‍❤️‍👨" },
-      { id:"event-18", name: 'Paphos', title:"Paphos", date: "September", photo: "images/Paphos.jpg", text: "You turned a Saturday into the perfect vacation getaway 🌴" },
-      { id:"event-19", name: 'Vienna / Prague', title:"Vienna / Prague", date: "October", photo: "images/ViennaPrague.jpg", text: "Here, I annoyed you a little (😠), but I hope I made up for it 🚶" },
-      { id:"event-20", name: 'Zagreb / Ljubljana', title:"Zagreb / Ljubljana", date: "October", photo: "", text: "Loading..." },
+      { id:"event-15", name: '', title:"", date: "", photo: "", text: "" },
+      { id:"event-16", name: '', title:"", date: "2025", photo: "", text: "" },
+      { id:"event-17", name: 'Warsaw / Kraków / Gdańsk', title:"Warsaw / Kraków / Gdańsk", date: "April", photo: "images/WarsawKrakowGdansk.jpg", text: "Here, everything felt better, even with both of us a little sick 🤒" },
+      { id:"event-18", name: 'Nea Moudania', title:"Nea Moudania", date: "August", photo: "images/NeaMoudania.jpg", text: "Here, I just wanted to thank you for always taking care of me 😄" },
+      { id:"event-19", name: 'Kos / Kalimnos', title:"Kos / Kalimnos", date: "August", photo: "images/KosKalimnos.jpg", text: "Here, we became even more familiar 👩‍❤️‍👨" },
+      { id:"event-20", name: 'Paphos', title:"Paphos", date: "September", photo: "images/Paphos.jpg", text: "You turned a Saturday into the perfect vacation getaway 🌴" },
+      { id:"event-21", name: 'Vienna / Prague', title:"Vienna / Prague", date: "October", photo: "images/ViennaPrague.jpg", text: "Here, I annoyed you a little (😠), but I hope I made up for it 🚶" },
+      { id:"event-22", name: 'Zagreb / Ljubljana', title:"Zagreb / Ljubljana", date: "October", photo: "images/ZagrebLjubljana.jpg", text: "Here, even though the weather let us down (🌧), we didn\’t let it ruin our mood 🌈" },
+      { id:"event-23", name: 'Düsseldorf / Cologne', title:"Düsseldorf / Cologne", date: "November", photo: "", text: "Loading..." },
+      { id:"event-24", name: '', title:"", date: "", photo: "", text: "" },
+      { id:"event-25", name: '', title:"", date: "2026", photo: "", text: "" },
     ];
 
     const slidesCarousel = new Map([
@@ -207,7 +212,7 @@
                       {title: "", imageSrc: "images/theend38.jpg", caption: ""},
                       {title: "", imageSrc: "images/theend39.jpg", caption: ""},
                       {title: "", imageSrc: "images/theend40.jpg", caption: ""}]],
-      ["event-15", [{title: "", imageSrc: "images/WarsawKrakowGdansk1.jpg", caption: ""},
+      ["event-17", [{title: "", imageSrc: "images/WarsawKrakowGdansk1.jpg", caption: ""},
                       {title: "", imageSrc: "images/WarsawKrakowGdansk2.jpg", caption: ""},
                       {title: "", imageSrc: "images/WarsawKrakowGdansk3.jpg", caption: ""},
                       {title: "", imageSrc: "images/WarsawKrakowGdansk4.jpg", caption: ""},
@@ -221,7 +226,7 @@
                       {title: "", imageSrc: "images/WarsawKrakowGdansk12.jpg", caption: ""},
                       {title: "", imageSrc: "images/WarsawKrakowGdansk13.jpg", caption: ""},
                       {title: "", imageSrc: "images/WarsawKrakowGdansk14.jpg", caption: ""}]],
-      ["event-16", [{title: "", imageSrc: "images/NeaMoudania1.jpg", caption: ""},
+      ["event-18", [{title: "", imageSrc: "images/NeaMoudania1.jpg", caption: ""},
                       {title: "", imageSrc: "images/NeaMoudania2.jpg", caption: ""},
                       {title: "", imageSrc: "images/NeaMoudania3.jpg", caption: ""},
                       {title: "", imageSrc: "images/NeaMoudania4.jpg", caption: ""},
@@ -232,7 +237,7 @@
                       {title: "", imageSrc: "images/NeaMoudania9.jpg", caption: ""},
                       {title: "", imageSrc: "images/NeaMoudania10.jpg", caption: ""},
                       {title: "", imageSrc: "images/NeaMoudania11.jpg", caption: ""}]],
-      ["event-17", [{title: "", imageSrc: "images/KosKalimnos1.jpg", caption: ""},
+      ["event-19", [{title: "", imageSrc: "images/KosKalimnos1.jpg", caption: ""},
                       {title: "", imageSrc: "images/KosKalimnos2.jpg", caption: ""},
                       {title: "", imageSrc: "images/KosKalimnos3.jpg", caption: ""},
                       {title: "", imageSrc: "images/KosKalimnos4.jpg", caption: ""},
@@ -249,12 +254,12 @@
                       {title: "", imageSrc: "images/KosKalimnos15.jpg", caption: ""},
                       {title: "", imageSrc: "images/KosKalimnos16.jpg", caption: ""},
                       {title: "", imageSrc: "images/KosKalimnos17.jpg", caption: ""}]],
-      ["event-18", [{title: "", imageSrc: "images/Paphos1.jpg", caption: ""},
+      ["event-20", [{title: "", imageSrc: "images/Paphos1.jpg", caption: ""},
                       {title: "", imageSrc: "images/Paphos2.jpg", caption: ""},
                       {title: "", imageSrc: "images/Paphos3.jpg", caption: ""},
                       {title: "", imageSrc: "images/Paphos4.jpg", caption: ""},
                       {title: "", imageSrc: "images/Paphos5.jpg", caption: ""}]],
-      ["event-19", [{title: "", imageSrc: "images/ViennaPrague1.jpg", caption: ""},
+      ["event-21", [{title: "", imageSrc: "images/ViennaPrague1.jpg", caption: ""},
                       {title: "", imageSrc: "images/ViennaPrague2.jpg", caption: ""},
                       {title: "", imageSrc: "images/ViennaPrague3.jpg", caption: ""},
                       {title: "", imageSrc: "images/ViennaPrague4.jpg", caption: ""},
@@ -267,7 +272,18 @@
                       {title: "", imageSrc: "images/ViennaPrague11.jpg", caption: ""},
                       {title: "", imageSrc: "images/ViennaPrague12.jpg", caption: ""},
                       {title: "", imageSrc: "images/ViennaPrague13.jpg", caption: ""}]],
-      ["event-20", [{title: "", imageSrc: "", caption: ""}]],
+      ["event-22", [{title: "", imageSrc: "images/ZagrebLjubljana1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana3.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana4.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana5.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana6.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana7.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana8.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana9.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana10.jpg", caption: ""},
+                      {title: "", imageSrc: "images/ZagrebLjubljana11.jpg", caption: ""}]],
+      ["event-23", [{title: "", imageSrc: "", caption: ""}]],
     ]);
 
     createEvents();
@@ -293,7 +309,7 @@
       let timeline = document.getElementById('content-events-id');
       let counter = 1;
       events.forEach(event => {
-        let yearFlag = (event.date ==  "2023" || event.date == "2024") ? true : false;
+        let yearFlag = String(event.date).startsWith("20");
         let skipFlag = (event.date == "") ? true : false;
         var timelineItem = document.createElement('div');
         timelineItem.className = yearFlag ? 'js-timeline_item ag-timeline_item-year' : 'js-timeline_item ag-timeline_item';
