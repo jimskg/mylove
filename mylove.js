@@ -27,9 +27,10 @@
       { id:"event-20", name: 'Paphos', title:"Paphos", date: "September", photo: "images/Paphos.jpg", text: "You turned a Saturday into the perfect vacation getaway 🌴" },
       { id:"event-21", name: 'Vienna / Prague', title:"Vienna / Prague", date: "October", photo: "images/ViennaPrague.jpg", text: "Here, I annoyed you a little (😠), but I hope I made up for it 🚶" },
       { id:"event-22", name: 'Zagreb / Ljubljana', title:"Zagreb / Ljubljana", date: "October", photo: "images/ZagrebLjubljana.jpg", text: "Here, even though the weather let us down (🌧), we didn\’t let it ruin our mood 🌈" },
-      { id:"event-23", name: 'Düsseldorf / Cologne', title:"Düsseldorf / Cologne", date: "November", photo: "", text: "Loading..." },
+      { id:"event-23", name: 'Düsseldorf / Köln', title:"Düsseldorf / Köln", date: "November", photo: "images/DusseldorfKoln.jpg", text: "It was a small, tough journey, but we felt Christmas before it arrived 🎄." },
       { id:"event-24", name: '', title:"", date: "", photo: "", text: "" },
       { id:"event-25", name: '', title:"", date: "2026", photo: "", text: "" },
+      { id:"event-26", name: 'Upper Countries', title:"Upper Countries", date: "August", photo: "", text: "Loading..." },
     ];
 
     const slidesCarousel = new Map([
@@ -283,7 +284,15 @@
                       {title: "", imageSrc: "images/ZagrebLjubljana9.jpg", caption: ""},
                       {title: "", imageSrc: "images/ZagrebLjubljana10.jpg", caption: ""},
                       {title: "", imageSrc: "images/ZagrebLjubljana11.jpg", caption: ""}]],
-      ["event-23", [{title: "", imageSrc: "", caption: ""}]],
+      ["event-23", [{title: "", imageSrc: "images/DusseldorfKoln1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/DusseldorfKoln2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/DusseldorfKoln3.jpg", caption: ""},
+                      {title: "", imageSrc: "images/DusseldorfKoln4.jpg", caption: ""},
+                      {title: "", imageSrc: "images/DusseldorfKoln5.jpg", caption: ""},
+                      {title: "", imageSrc: "images/DusseldorfKoln6.jpg", caption: ""},
+                      {title: "", imageSrc: "images/DusseldorfKoln7.jpg", caption: ""},
+                      {title: "", imageSrc: "images/DusseldorfKoln8.jpg", caption: ""}]],
+      ["event-26", [{title: "", imageSrc: "", caption: ""}]]
     ]);
 
     createEvents();
