@@ -30,7 +30,7 @@
       { id:"event-23", name: 'Düsseldorf / Köln', title:"Düsseldorf / Köln", date: "November", photo: "images/DusseldorfKoln.jpg", text: "It was a small, tough journey, but we felt Christmas before it arrived 🎄." },
       { id:"event-24", name: '', title:"", date: "", photo: "", text: "" },
       { id:"event-25", name: '', title:"", date: "2026", photo: "", text: "" },
-      { id:"event-26", name: 'New Passengers', title:"New Passengers", date: "August", photo: "images/NewPassengers.jpg", text: "Loading..." },
+      { id:"event-26", name: 'New Passengers', title:"New Passengers", date: "August", photo: "images/NewPassengers.jpg", text: "It felt like a glimpse of our future 💫" },
       { id:"event-27", name: 'Chios', title:"Chios", date: "September", photo: "", text: "Loading..." },
       { id:"event-28", name: 'Porto / Lisbon', title:"Porto / Lisbon", date: "October", photo: "", text: "Loading..." },
       { id:"event-29", name: '', title:"", date: "", photo: "", text: "" },
