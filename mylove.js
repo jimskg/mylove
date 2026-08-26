@@ -30,7 +30,12 @@
       { id:"event-23", name: 'Düsseldorf / Köln', title:"Düsseldorf / Köln", date: "November", photo: "images/DusseldorfKoln.jpg", text: "It was a small, tough journey, but we felt Christmas before it arrived 🎄." },
       { id:"event-24", name: '', title:"", date: "", photo: "", text: "" },
       { id:"event-25", name: '', title:"", date: "2026", photo: "", text: "" },
-      { id:"event-26", name: 'Upper Countries', title:"Upper Countries", date: "August", photo: "", text: "Loading..." },
+      { id:"event-26", name: 'New Passengers', title:"New Passengers", date: "August", photo: "images/NewPassengers.jpg", text: "Loading..." },
+      { id:"event-27", name: 'Chios', title:"Chios", date: "September", photo: "", text: "Loading..." },
+      { id:"event-28", name: 'Porto / Lisbon', title:"Porto / Lisbon", date: "October", photo: "", text: "Loading..." },
+      { id:"event-29", name: '', title:"", date: "", photo: "", text: "" },
+      { id:"event-30", name: '', title:"", date: "2027", photo: "", text: "" },
+      { id:"event-31", name: 'Upper Countries', title:"Upper Countries", date: "August", photo: "", text: "Loading..." },
     ];
 
     const slidesCarousel = new Map([
@@ -292,7 +297,10 @@
                       {title: "", imageSrc: "images/DusseldorfKoln6.jpg", caption: ""},
                       {title: "", imageSrc: "images/DusseldorfKoln7.jpg", caption: ""},
                       {title: "", imageSrc: "images/DusseldorfKoln8.jpg", caption: ""}]],
-      ["event-26", [{title: "", imageSrc: "", caption: ""}]]
+      ["event-26", [{title: "", imageSrc: "images/NewPassengers1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NewPassengers2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/NewPassengers3.jpg", caption: ""},]],
+      ["event-27", [{title: "", imageSrc: "", caption: ""}]]
     ]);
 
     createEvents();
