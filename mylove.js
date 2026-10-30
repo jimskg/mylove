@@ -31,11 +31,10 @@
       { id:"event-24", name: '', title:"", date: "", photo: "", text: "" },
       { id:"event-25", name: '', title:"", date: "2026", photo: "", text: "" },
       { id:"event-26", name: 'New Passengers', title:"New Passengers", date: "August", photo: "images/NewPassengers.jpg", text: "It felt like a glimpse of our future 💫" },
-      { id:"event-27", name: 'Chios', title:"Chios", date: "September", photo: "", text: "Loading..." },
-      { id:"event-28", name: 'Porto / Lisbon', title:"Porto / Lisbon", date: "October", photo: "", text: "Loading..." },
-      { id:"event-29", name: '', title:"", date: "", photo: "", text: "" },
-      { id:"event-30", name: '', title:"", date: "2027", photo: "", text: "" },
-      { id:"event-31", name: 'Upper Countries', title:"Upper Countries", date: "August", photo: "", text: "Loading..." },
+      { id:"event-27", name: 'Porto / Lisbon / Sintra', title:"Porto / Lisbon", date: "October", photo: "images/LisbonPorto.jpg", text: "Chasing views, running out of energy, and making memories with my favourite travel planner 😮‍💨" },
+      { id:"event-28", name: '', title:"", date: "", photo: "", text: "" },
+      { id:"event-29", name: '', title:"", date: "2027", photo: "", text: "" },
+      { id:"event-30", name: 'Upper Countries', title:"Upper Countries", date: "August", photo: "", text: "Loading..." },
     ];
 
     const slidesCarousel = new Map([
@@ -300,7 +299,28 @@
       ["event-26", [{title: "", imageSrc: "images/NewPassengers1.jpg", caption: ""},
                       {title: "", imageSrc: "images/NewPassengers2.jpg", caption: ""},
                       {title: "", imageSrc: "images/NewPassengers3.jpg", caption: ""},]],
-      ["event-27", [{title: "", imageSrc: "", caption: ""}]]
+      ["event-27", [{title: "", imageSrc: "images/LisbonPorto1.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto2.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto3.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto4.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto5.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto6.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto7.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto8.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto9.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto10.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto11.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto12.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto13.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto14.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto15.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto16.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto17.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto18.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto19.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto20.jpg", caption: ""},
+                      {title: "", imageSrc: "images/LisbonPorto21.jpg", caption: ""},]],
+      ["event-30", [{title: "", imageSrc: "", caption: ""}]]
     ]);
 
     createEvents();
